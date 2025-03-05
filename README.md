@@ -5,7 +5,7 @@
 stateDiagram-v2
     state "Esperando Tarjeta" as espera_tarjeta
     state "Validando Tarjeta" as validando_tarjeta
-    state "Codigo Pin" as codigo_pin
+    state "Codigo Pin" as codigo_pin                                                                    
     state "Valindando Pin" as validando_pin
     state "Fin Proceso" as selecion_proceso
     state "Retencion de tarjeta" as retencion_tarjeta
@@ -51,6 +51,7 @@ decida cerrar sesion asi finalizando el cajero
 
 ### Estado de la tarjeta
 ```mermaid
+                                    stateDiagram-v2
 [*] --> espera_tarjeta
 espera_tarjeta --> validando_tarjeta : introducen la tarjeta
 validando_tarjeta --> espera_tarjeta: tarjeta rechazada
