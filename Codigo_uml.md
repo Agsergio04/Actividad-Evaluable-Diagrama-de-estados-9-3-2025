@@ -35,7 +35,7 @@ stateDiagram-v2
     elegir_transaccion--> cerrando_sesion :Ha escogido cerrar sesion 
     
     
-    cerrando_sesion -->  <<end>> 
+    cerrando_sesion -->  [*]
     codigo_pin--> retencion_tarjeta : Supero el limite de intentos permitidos
     
-    retencion_tarjeta --> <<end>>
+    retencion_tarjeta --> [*]
