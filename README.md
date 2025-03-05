@@ -40,4 +40,5 @@ stateDiagram-v2
     codigo_pin--> retencion_tarjeta : Supero el limite de intentos permitidos
     
     retencion_tarjeta --> [*]
-
+```
+## Explicacion
