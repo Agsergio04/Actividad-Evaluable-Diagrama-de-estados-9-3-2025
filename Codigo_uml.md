@@ -1,3 +1,4 @@
+```mermaid
 @startuml
 state "Esperando Tarjeta" as espera_tarjeta
 state "Validando Tarjeta" as validando_tarjeta
@@ -38,3 +39,4 @@ codigo_pin--> retencion_tarjeta : Supero el limite de intentos permitidos
 
 retencion_tarjeta --> fin
 @enduml
+```
