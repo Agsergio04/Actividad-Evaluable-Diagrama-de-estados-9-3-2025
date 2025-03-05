@@ -33,7 +33,7 @@ stateDiagram-v2
     realizando_transaccion --> fin_transaccion: Se esta operando la operacion
     fin_transaccion --> elegir_transaccion : Ha escogido hacer otra operacion
     
-    elegir_transaccion--> cerrando_sesion :Ha escogido cerrar sesion 
+    elegir_transaccion--> cerrando_sesion :Vuelve a elegir operacion 
     
     
     cerrando_sesion -->  [*]
