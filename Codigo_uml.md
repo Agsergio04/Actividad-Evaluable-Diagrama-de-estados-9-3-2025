@@ -25,7 +25,7 @@ stateDiagram-v2
     selecion_proceso --> codigo_pin: Ha cancelado Proceso
     selecion_proceso --> validando_pin:No desea cancelar el proceso
     
-    validando_pin--> codigo_pin: Reintento\nMientras que : Intento < 3 
+    validando_pin--> codigo_pin: Reintento\nMientras que  Intento < 3 
     validando_pin --> elegir_transaccion: Pin correcto
     
     elegir_transaccion--> realizando_transaccion : Ha elegido hacer una operacion
