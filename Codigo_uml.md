@@ -12,7 +12,6 @@ stateDiagram-v2
     state "Realizando Transaccion" as realizando_transaccion
     state "Fin Transaccion" as fin_transaccion
     state "Cerrado de Sesion" as cerrando_sesion
-    state "Finalizar Proceso" as fin  <<end>>
     
     [*] --> espera_tarjeta
     
@@ -36,7 +35,7 @@ stateDiagram-v2
     elegir_transaccion--> cerrando_sesion :Ha escogido cerrar sesion 
     
     
-    cerrando_sesion --> fin 
+    cerrando_sesion -->  <<end>> 
     codigo_pin--> retencion_tarjeta : Supero el limite de intentos permitidos
     
-    retencion_tarjeta --> fin
+    retencion_tarjeta --> <<end>>
